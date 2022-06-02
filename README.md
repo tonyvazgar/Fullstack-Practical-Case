@@ -1,5 +1,7 @@
 # Fullstack-Practical-Case
 
+<B>INSTRUCCIONES DE COMO CORRER EL PROYECTO EN CADA CARPETA (FRONT Y BACK)</B>
+
 ## Goal
 The goal of this test is to get a better perspective on your technical skills in software development for the role. This test will help us to know the quality of the code, general programming practices, design patterns, handling of git, attention to detail resolution of problems among other important things to know your skills.
 Keep attention to this goal, because this be considered to evaluate.
