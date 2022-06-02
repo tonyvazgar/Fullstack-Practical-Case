@@ -2,20 +2,13 @@
 
 BDD en <b>MongoAtlas</b>
 
-<ol>
-    <li>Tener instalado node</li>
-    <li>Dentro de esta carpeta (back) correr en terminal: 
-    ```
+1. Tener instalado node</li>
+2. Dentro de esta carpeta (back) correr en terminal para instalar todas las dependencias/librerias: 
+    ```console
     npm install
     ```
-    </li>
-    <li>Una vez instaladas las dependencias, ejecutar proyecto con el comando: 
-    ```
+3. Una vez instaladas las dependencias, ejecutar proyecto con el comando: 
+    ```console
     nodemon app.js
     ```
-    </li>
-    <li>Ver API DOCUMENTATION: 
-        <a href="http://localhost:3000/documentation/#/">http://localhost:3000/documentation/#/</a>
-    </li>
-    
-</ol>
+4. Ver API DOCUMENTATION: <a href="http://localhost:3000/documentation/#/">http://localhost:3000/documentation/#/</a>
