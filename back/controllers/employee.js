@@ -18,7 +18,7 @@ const register = async (req, res) => {
 
         const data = dataUser;
         res.status(201)
-        res.send({ data });
+        res.send(data);
     } catch (error) {
         console.log(error);
         handleHttpError(res, "ERROR_REGISTER")
@@ -32,7 +32,7 @@ const register = async (req, res) => {
 const listadoEmployees = async (req, res) => {
     try {
         const data = await employeeMoodel.find({});     //Mongo
-        res.send({ data });
+        res.send(data);
     } catch (error) {
         console.log(error);
         handleHttpError(res, "ERROR_GET_EMPLOYEES_LIST");
@@ -42,13 +42,13 @@ const listadoEmployees = async (req, res) => {
 const deleteItem = async (req, res) => {
     try {
         req = matchedData(req);
-        console.log(req);
+        console.log("****ELIMINANDO****" + req);
         const { id } = req;
         const deleteResponse = await employeeMoodel.delete({ id });
         const data = {
             deleted: deleteResponse.matchedCount
         }
-        res.send({ data });
+        res.send(data);
     } catch (error) {
         console.log(error)
         handleHttpError(res, "ERROR_Delete_ITEM");
@@ -58,12 +58,13 @@ const deleteItem = async (req, res) => {
 const editItem = async (req, res) => {
     try {
         const { id, ...body } = matchedData(req);
+        console.log("Editando ***" + req);
         console.log(body);
         console.log(id);
         const data = await employeeMoodel.findOneAndUpdate(
             {id}, body, {new: true}
         );
-        res.send({ data })
+        res.send(data)
     } catch (error) {
         console.log(error)
         handleHttpError(res, "ERROR_Edit_ITEM");

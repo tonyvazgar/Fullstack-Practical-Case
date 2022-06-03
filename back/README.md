@@ -1,6 +1,8 @@
-# Pasos para instalar
+# Backend (API REST)
+## Pasos para instalar
 
-BDD en <b>MongoAtlas</b>
+
+** BDD en <b>MongoAtlas</b> **
 
 1. Tener instalado node</li>
 2. Dentro de esta carpeta (back) correr en terminal para instalar todas las dependencias/librerias: 
@@ -11,4 +13,4 @@ BDD en <b>MongoAtlas</b>
     ```console
     nodemon app.js
     ```
-4. Ver API DOCUMENTATION: <a href="http://localhost:3000/documentation/#/">http://localhost:3000/documentation/#/</a>
+4. Ver API DOCUMENTATION: <a href="http://localhost:4000/documentation/#/">http://localhost:4000/documentation/#/</a>
